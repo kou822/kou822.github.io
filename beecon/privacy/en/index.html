@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beecon Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.8; max-width: 760px; margin: 0 auto; padding: 24px;
+    color: #1a1a1a; background: #fff;
+  }
+  h1 { font-size: 1.6rem; border-bottom: 2px solid #f5b301; padding-bottom: 8px; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; color: #b8860b; }
+  code { background: rgba(127,127,127,.15); padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { border: 1px solid rgba(127,127,127,.35); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: rgba(245,179,1,.15); }
+  a { color: #b8860b; }
+  .muted { color: #666; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #1a1a1a; }
+    .muted { color: #999; }
+  }
+</style>
+</head>
+<body>
+<h1>Beecon Privacy Policy</h1>
+<p class="muted">Last updated: October 13, 2026 ・ <a href="../">日本語</a></p>
+<p class="muted">This is an English translation of the Japanese policy. If the two differ, the Japanese version prevails.</p>
+
+<p>
+  This policy explains how <strong>Koichiro Yamashita</strong> ("we") handles user information in the iOS app
+  "<strong>Beecon</strong>" ("the app"). The app helps you find a friend you have lost inside a building by
+  sharing location <strong>only with people you have approved in advance</strong>.
+</p>
+
+<h2>1. Information collected and why</h2>
+<table>
+  <thead><tr><th>Type of information</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Location (precise location from GPS and similar sources)</td>
+      <td>To deliver your location <strong>only to the devices of friends you have approved</strong> when you are
+      separated, and to show the distance, direction and relative height to that friend. Location is
+      <strong>end-to-end encrypted between devices</strong>; our server cannot read it and does not store it.
+      Distance and similar values are calculated on the device.</td>
+    </tr>
+    <tr>
+      <td>Sensor information (Bluetooth signal strength, UWB (nearby ranging), barometric pressure and motion)</td>
+      <td>To estimate the distance, direction and floor (height) of a nearby friend more accurately.
+      This is processed mainly on the device.</td>
+    </tr>
+    <tr>
+      <td>Push notification token</td>
+      <td>Kept on the server as a delivery address so that push notifications such as "someone is looking for you"
+      can reach you. The app has no accounts or user IDs, and does not collect your name or email address.</td>
+    </tr>
+    <tr>
+      <td>Information related to push delivery (collected by Google):
+        Firebase installation ID, delivery measurement data, and
+        diagnostic information about how the SDK operates (technical information such as errors and performance)</td>
+      <td>To deliver push notifications, measure their delivery, and maintain and improve Firebase services.
+      <strong>Google collects this directly</strong> through the Firebase SDK and handles it under Google's policies.
+      It is needed for push notifications whether or not ads are shown.
+      It does not include your location, your friendships or your display name.</td>
+    </tr>
+    <tr>
+      <td>Display name (optional)</td>
+      <td>So that friends can recognize you. It is stored on your device and delivered directly to your friends'
+      devices in encrypted form (the server cannot read it). Setting one is optional.</td>
+    </tr>
+    <tr>
+      <td>Advertising-related information (collected by Google):
+        device identifiers (scoped to the app or developer), IP address and the approximate region inferred from it,
+        ads shown, interaction data such as app launches and taps,
+        crash logs, and performance data such as launch time, hang rate and energy use</td>
+      <td>To show ads in the app (Google AdMob) and to measure delivery, prevent fraud and improve the service.
+      <strong>Google collects this directly</strong> through the ads SDK and handles it under Google's policies.
+      The app requests <strong>non-personalized ads</strong>, but that setting only affects how ads are chosen;
+      it does not stop the collection described above.
+      <strong>Your location (GPS), your friendships and your display name are never used for advertising or passed to Google.</strong>
+      In regions where consent is required, the app asks for it before showing ads (you can change it in the app under Settings → Privacy).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>2. Who your location is shared with</h2>
+<p>
+  Your location is shared with another user <strong>only when a friend you approved in advance (by accepting an
+  invitation) uses "Find" to look for you, and you have allowed sharing, either at that moment or through your settings.</strong>
+  Your location never reaches anyone you have not approved. You can change whether you can be found at any time with the
+  in-app "Location sharing" setting (Off / While app is open / Anytime). That setting is stored only on your device, and
+  the device itself makes the decision. Your friendships are also stored only on your device; our server does not know
+  who is friends with whom.
+</p>
+
+<h2>3. Third parties and external services</h2>
+<p>The app uses the following external services. Each company handles data under its own policies.</p>
+<ul>
+  <li><strong>Google Firebase</strong> (push notification delivery) —
+    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy</a></li>
+  <li><strong>Google AdMob</strong> (in-app ad delivery and measurement) —
+    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's advertising policies</a></li>
+</ul>
+<p>Other than the above, we do not provide or sell your information to third parties, except where required by law.</p>
+
+<h2>4. Storage and deletion</h2>
+<p>
+  Friendships, encryption keys, your display name, sharing settings and notification history are stored only on your device.
+  You can erase them at any time in the app under Settings → Privacy → "Delete all data", which also tells your friends
+  that the friendship has ended.
+</p>
+<p>
+  Deleting (uninstalling) the app ends your friendships. Because of how the device works, some items such as encryption
+  keys may remain in a protected area of the device, but the app erases them first when it is installed again, so earlier
+  friendships and sharing settings do not come back. They are not carried over by restoring from a backup or moving to a
+  new device either. Notification history keeps only the latest 50 entries, for 30 days.
+</p>
+<p>The server keeps only the following.</p>
+<table>
+  <thead><tr><th>What is kept</th><th>For how long</th></tr></thead>
+  <tbody>
+    <tr><td>Encrypted messages such as locations and search requests (in memory only; we cannot read the contents)</td>
+        <td>Until the recipient receives them, for at most 30 seconds (within about 1 minute at the latest, including the interval of the periodic cleanup)</td></tr>
+    <tr><td>Encrypted messages announcing changes to a display name or sharing setting, or the end of a friendship (in memory only)</td>
+        <td>Until the recipient receives them, for at most 7 days</td></tr>
+    <tr><td>Notification delivery addresses (the push notification token and a hash of the address from which the contents cannot be guessed)</td>
+        <td>180 days after last use. The address is deleted when the friendship ends</td></tr>
+    <tr><td>Hashes of ended addresses (a record to prevent reuse)</td><td>90 days</td></tr>
+    <tr><td>Invite codes (public keys and encrypted information)</td><td>Until the friend has been added, for at most 24 hours</td></tr>
+  </tbody>
+</table>
+<p>The server does not keep a history of locations and does not write encrypted messages to disk.</p>
+
+<h2>5. Children's privacy</h2>
+<p>The app is not intended for children under 13.</p>
+
+<h2>6. Changes to this policy</h2>
+<p>This policy may be revised when necessary. Important changes will be announced in the app or on this page.</p>
+
+<h2>7. Contact</h2>
+<p>Questions about privacy in the app: <a href="mailto:anyone-quarter9t@icloud.com">anyone-quarter9t@icloud.com</a></p>
+
+</body>
+</html>
